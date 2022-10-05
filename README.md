@@ -1,3 +1,4 @@
+## A React based Chess app
 ## Steps to run this project
 
 ## Step 1 - Install Node Module
