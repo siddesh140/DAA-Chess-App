@@ -8,7 +8,7 @@
 ## Step 2 - Run the project on browser
 ### `npm start`
 
-#Libraries used
+##Libraries used
 * Redux
 * react-Redux
 * js-cookie
@@ -17,6 +17,12 @@
 * i18next
 * react-i18
 * react-i18next
+
+## Features
+* Play Chess
+* Elegant UI
+* Simple UX
+* User can forward or reverse the moves played to review their strategy
 
 
 
