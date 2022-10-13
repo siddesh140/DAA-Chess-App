@@ -128,6 +128,7 @@ class Board extends React.Component {
       viewing_history: false,
       just_clicked: false,
     });
+    console.log("Resetted the board");
   }
 
   // full function for executing a move
@@ -149,6 +150,7 @@ class Board extends React.Component {
 
     // note if king or rook has moved (castling not allowed if these have moved)
     if (copy_squares[start].ascii === (player === "w" ? "k" : "K")) {
+      console.log("king or rook has moved");
       if (player === "w") {
         this.setState({
           white_king_has_moved: 1,
@@ -194,6 +196,7 @@ class Board extends React.Component {
         capture_made: true,
       });
     }
+  console.log("Added captured pieces to collection")
     if (copy_squares[start].ascii === (player === "w" ? "p" : "P")) {
       if (end - start === (player === "w" ? -9 : 7)) {
         // black going down to the left OR white going up to the left
@@ -565,7 +568,7 @@ class Board extends React.Component {
       check_squares[end] = new Queen("b");
     }
     if (this.in_check(player, check_squares) === true) return false;
-
+    console.log("Chances of possible moves");
     return true;
   }
 
@@ -1482,6 +1485,7 @@ class Pawn {
         if (row_diff === -1) return true;
       }
     }
+    console.log("Invalid Move!");
     return false;
   }
 }
