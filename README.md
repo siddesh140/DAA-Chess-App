@@ -23,6 +23,8 @@
 * Elegant UI
 * Simple UX
 * User can forward or reverse the moves played to review their strategy
+* Play Chess With AI
+* Play Chess With Friends
 
 
 
