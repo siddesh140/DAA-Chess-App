@@ -275,7 +275,12 @@ class Board extends React.Component {
       copy_history_h4.push(null);
     }
 
-    let check_mated =
+     let check_mated =
+      this.checkmate("w", copy_squares) || this.checkmate("b", copy_squares);
+let stale_mated =
+       (this.stalemate("w", copy_squares) && player === "b") ||
+       (this.stalemate("b", copy_squares) && player === "w");
+let check_mated =
       this.checkmate("w", copy_squares) || this.checkmate("b", copy_squares);
     let stale_mated =
       (this.stalemate("w", copy_squares) && player === "b") ||
